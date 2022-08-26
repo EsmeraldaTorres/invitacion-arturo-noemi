@@ -5,12 +5,17 @@ function abrir() {
   document.getElementById("sobre-arriba").classList.add("animate__fadeOutUp");
   document.getElementById("sobre-abajo").classList.add("animate__slideOutDown");
   document.getElementById("btn-open").classList.remove("animate__infinite");
-  document.getElementById("btn-open").classList.add("animate__fadeOut");
+  document.getElementById("btn-open").classList.add("hide");
+
   setTimeout(function () {
     document.getElementById("hoja-principal").classList.add("hide");
+    document.getElementById("bg").classList.add("hide");
     document.getElementById("invitacion").classList.remove("hide");
+    document
+      .getElementById("name")
+      .classList.add("animate__animated animate__pulse");
     audio.play();
-  }, 3000);
+  }, 2500);
 }
 
 // auidio

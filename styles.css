@@ -14,11 +14,12 @@
 .title2 {
   font-size: 2.5rem;
 }
+/* data-aos-duration="3000" */
 /* sobre */
 .sobre {
   height: 100vh;
   width: 80vw;
-  z-index: 3;
+  /* z-index: 1; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,7 +217,6 @@ hr {
 /* itinerario */
 .itinerario {
   height: 50vh;
-  max-width: 100%;
   background-image: linear-gradient(
       rgba(5, 7, 12, 0.277),
       rgba(5, 7, 12, 0.277)
@@ -249,6 +249,9 @@ h3 {
 .display-5 {
   font-size: 1.6rem;
 }
+.display-number {
+  font-size: 1.2rem;
+}
 /* ubicación */
 .ubicacion {
   height: min-content;
@@ -276,6 +279,10 @@ h3 {
 button {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: ease-out 2s;
+}
+button:hover {
+  transform: scale(1.05);
 }
 .owl-nav {
   color: rgba(27, 27, 26, 0.575);
@@ -316,15 +323,15 @@ button {
   background-position: top;
 }
 .w-90 {
-  width: 90%;
+  width: 85%;
 }
 /* nuestro-inicio */
 .nuestro-inicio {
   background-color: rgb(197, 166, 119);
 }
 .nuestro-inicio img {
-  width: 300px;
-  height: 200px;
+  width: 250;
+  height: 180px;
   border: solid 2px whitesmoke;
   border-radius: 5px;
 }
@@ -393,6 +400,9 @@ a:hover {
   background-position: center;
   z-index: 9;
 }
+.display-2 {
+  font-size: 2rem;
+}
 @media (min-width: 470px) {
   .title-principal {
     font-size: 3.5rem;
@@ -414,6 +424,15 @@ a:hover {
   }
   .logo-liverpool {
     width: 200px;
+  }
+  .w-90 {
+    width: 80%;
+  }
+  .display-2 {
+    font-size: 3rem;
+  }
+  .display-5 {
+    font-size: 1.3rem;
   }
 }
 
@@ -448,6 +467,15 @@ a:hover {
   .logo-liverpool {
     width: 250px;
     margin-bottom: 2rem;
+  }
+  .w-90 {
+    width: 60%;
+  }
+  .display-2 {
+    font-size: 4rem;
+  }
+  .display-5 {
+    font-size: 1.4rem;
   }
 }
 @media (min-width: 1020px) {
@@ -491,5 +519,14 @@ a:hover {
   }
   .owl-container {
     width: 30%;
+  }
+  .w-90 {
+    width: 45%;
+  }
+  .display-2 {
+    font-size: 5rem;
+  }
+  .display-5 {
+    font-size: 1.6rem;
   }
 }

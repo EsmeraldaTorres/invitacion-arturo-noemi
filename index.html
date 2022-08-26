@@ -47,14 +47,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Arturo y Noemi</title>
   </head>
   <body>
-    <!-- <div
-      class="bg-white-almond animate__animated d-flex justify-content-center align-items-center"
+    <div
+      id="bg"
+      class="bg-white-almond d-flex justify-content-center align-items-center"
     >
-      <div class="sobre" id="hoja-principal">
+      <div id="hoja-principal" class="sobre">
         <img
+          loading="lazy"
           id="sobre-arriba"
           src="./assets/img/sobrearriba.png"
           class="animate__animated p-0 m-0 z-index-3"
@@ -62,58 +66,32 @@
         />
         <img
           id="sobre-abajo"
+          loading="lazy"
           class="p-0 m-0 z-index-2 animate__animated"
           src="./assets/img/sobreabajo.png"
           alt="sobre-abajo"
         />
         <button id="btn-open" class="btn-open" onclick="abrir()">
           <img
+            loading="lazy"
             src="./assets/img/logo.png"
             class="animate__animated animate__pulse animate__infinite"
             alt="logo"
           />
         </button>
       </div>
-    </div> -->
-    <div id="invitacion" class="hid invitacion">
+    </div>
+    <div id="invitacion" class="hide invitacion">
       <section class="home d-flex justify-content-center align-items-center">
         <div class="d-flex justify-content-center">
-          <img class="name" src="./assets/img/arturo-y-noemi.png" alt="" />
+          <img
+            loading="lazy"
+            class="name"
+            src="./assets/img/arturo-y-noemi.png"
+            alt="name"
+            id="name"
+          />
         </div>
-        <!-- <div>
-          <div class="d-flex justify-content-between align-items-center">
-            <p
-              class="text-white text-center title-principal pr-2 mr-3 visibility"
-            >
-              Noemi
-            </p>
-            <p
-              class="text-white text-center title-principal pr-2 mr-3 visibility"
-            >
-              &
-            </p>
-            <p class="text-white text-center title-principal pr-2 visibility">
-              Arturo
-            </p>
-          </div>
-          <div class="d-sm-flex justify-content-between align-items-center">
-            <p
-              class="text-white text-center title-principal animate__animated animate__fadeInLeft"
-            >
-              Arturo
-            </p>
-            <p
-              class="text-white text-center title-principal animate__animated animate__fadeInDown"
-            >
-              &
-            </p>
-            <p
-              class="text-white text-center title-principal animate__animated animate__fadeInRight"
-            >
-              Noemi
-            </p>
-          </div>
-        </div> -->
         <div class="text-white text-center player-btn" id="play">
           <i class="bi bi-pause-circle pause-btn player-icon"></i>
           <i class="bi bi-play-circle play-btn player-icon hide"></i>
@@ -131,29 +109,37 @@
       <section class="second-section">
         <div class="container d-flex justify-content-center align-items-center">
           <div class="col-10">
-            <div class="pb-4 d-flex justify-content-center align-items-center">
-              <img
-                src="./assets/img/Untitled design (3).png"
-                alt=""
-                class="decoration"
-              />
-            </div>
-            <p class="text-center display-6">
-              El día más importante de nuestras vidas ha llegado
-            </p>
-            <div class="pt-2 d-flex justify-content-center align-items-center">
-              <img
-                src="./assets/img/lineaalreves.png"
-                alt=""
-                class="decoration"
-              />
+            <div data-aos="fade-down" data-aos-duration="2000">
+              <div
+                class="pb-4 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  loading="lazy"
+                  src="./assets/img/Untitled design (3).png"
+                  alt="linae"
+                  class="decoration"
+                />
+              </div>
+              <p class="text-center display-6">
+                El día más importante de nuestras vidas ha llegado
+              </p>
+              <div
+                class="pt-2 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  loading="lazy"
+                  src="./assets/img/lineaalreves.png"
+                  alt="linea"
+                  class="decoration"
+                />
+              </div>
             </div>
           </div>
         </div>
         <div class="container2">
           <div class="positon-relative">
             <div class="d-flex justify-content-center align-items-center">
-              <div>
+              <div data-aos="zoom-in" data-aos-duration="3000">
                 <p class="text-white cuenta-regresiva m-0 text-center">
                   Viernes
                 </p>
@@ -162,17 +148,23 @@
                 </p>
               </div>
             </div>
-            <div class="d-flex justify-content-center align-items-center">
-              <!-- <p class="text-white m-0 ">faltan</p> -->
+            <div
+              class="d-flex justify-content-center align-items-center"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="1000"
+            >
               <p id="demo" class="cuenta-regresiva m-0"></p>
             </div>
           </div>
         </div>
         <div class="container3">
           <div class="d-flex justify-content-center align-items-center">
-            <div class="animate-up pt-4">
+            <div class="pt-4">
               <p
-                class="title2 pt-4 animate-left animate__animated mb-0 text-center font-paris"
+                class="title2 pt-4 mb-0 text-center font-paris"
+                data-aos="flip-up"
+                data-aos-duration="2000"
               >
                 Nuestra Boda
               </p>
@@ -180,13 +172,18 @@
                 class="pb-2 d-flex justify-content-center align-items-center"
               >
                 <img
+                  loading="lazy"
                   src="./assets/img/lineaalreves.png"
-                  alt=""
+                  alt="linea"
                   class="decoration"
                 />
               </div>
               <div class="text-center p-4">
-                <p class="pr-4 pl-4">
+                <p
+                  class="pr-4 pl-4"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Facilis repellat adipisci, qui aliquid dolor et labore amet
                   veniam quisquam dolores sit placeat blanditiis aperiam
@@ -208,21 +205,56 @@
         </p>
       </section>
       <section class="agradecimiento p-4">
-        <p class="text-center title2 font-paris">Gracias a nuestros padres</p>
+        <p
+          class="text-center title2 font-paris"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          Gracias a nuestros padres
+        </p>
         <div class="d-flex justify-content-around align-items-center">
-          <img class="decoration" src="./assets/img/line2.png" alt="" />
+          <img
+            loading="lazy"
+            class="decoration"
+            src="./assets/img/line2.png"
+            alt="linea"
+          />
         </div>
         <div class="d-flex justify-content-center">
           <div class="row">
             <div class="col-12 col-md-6 mt-4">
-              <p class="text-center font-gold display-6">Rogelio Macías Ruiz</p>
-              <p class="text-center font-gold display-6">
+              <p
+                class="text-center font-gold display-6"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+              >
+                Rogelio Macías Ruiz
+              </p>
+              <p
+                class="text-center font-gold display-6"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+              >
                 Andrea Lerma Gonzalez
               </p>
             </div>
             <div class="col-12 col-md-6 mt-4">
-              <p class="text-center display-6">Antonio Juárez Mota</p>
-              <p class="text-center display-6">Leticia Ortiz Villareal</p>
+              <p
+                class="text-center display-6"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+              >
+                Antonio Juárez Mota
+              </p>
+              <p
+                class="text-center display-6"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+              >
+                Leticia Ortiz Villareal
+              </p>
             </div>
           </div>
         </div>
@@ -235,14 +267,25 @@
         </div>
       </section>
       <section class="p-4">
-        <p class="text-center mt-4 display-4 p-0 font-paris">Mis padrinos</p>
+        <p
+          class="text-center mt-4 title2 p-0 font-paris"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
+          Y a nuestros padrinos
+        </p>
         <div class="d-flex justify-content-center">
           <div class="owl-container">
-            <div class="owl-carousel owl-theme">
+            <div
+              class="owl-carousel owl-theme"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               <div class="d-flex p-3 justify-content-center align-items-center">
                 <div>
                   <div class="d-flex justify-content-center align-items-center">
                     <img
+                      loading="lazy"
                       class="icon-img"
                       src="./assets/img/anillos.png"
                       alt="Card image cap"
@@ -261,6 +304,7 @@
                 <div>
                   <div class="d-flex justify-content-center align-items-center">
                     <img
+                      loading="lazy"
                       class="icon-img"
                       src="./assets/img/coin.png"
                       alt="Card image cap"
@@ -279,6 +323,7 @@
                 <div>
                   <div class="d-flex justify-content-center align-items-center">
                     <img
+                      loading="lazy"
                       class="icon-img"
                       src="./assets/img/lazo.png"
                       alt="Card image cap"
@@ -304,7 +349,7 @@
           </p>
         </div>
       </section>
-      <section class="itinerario d-flex justify-content-center">
+      <section class="itinerario">
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
@@ -327,6 +372,7 @@
                 <div class="w-50">
                   <div class="d-flex align-items-center justify-content-center">
                     <img
+                      loading="lazy"
                       class="card-img animate__animated animate__pulse animate__repeat-2 animate_slower"
                       src="./assets/img/iglesia.png"
                       alt="Card image cap"
@@ -352,6 +398,7 @@
                 <div class="w-50">
                   <div class="d-flex align-items-center justify-content-center">
                     <img
+                      loading="lazy"
                       class="card-img animate__animated animate__rotateInDownLeft"
                       src="./assets/img/Recepcion (1).png"
                       alt="Card image cap"
@@ -377,6 +424,7 @@
                 <div class="w-50">
                   <div class="d-flex align-items-center justify-content-center">
                     <img
+                      loading="lazy"
                       class="card-img animate__animated animate__rotateInDownRight"
                       src="./assets/img/comida.png"
                       alt="Card image cap"
@@ -402,6 +450,7 @@
                 <div class="w-50">
                   <div class="d-flex align-items-center justify-content-center">
                     <img
+                      loading="lazy"
                       class="card-img animate__animated animate__swing repeat-2"
                       src="./assets/img/fiesta.png"
                       alt="Card image cap"
@@ -443,21 +492,33 @@
       </section>
       <section class="ubicacion pt-4">
         <div>
-          <p class="text-center m-0 pt-4 display-5">Ubicaciones</p>
+          <p
+            class="text-center m-0 pt-4 display-5"
+            data-aos="flip-up"
+            data-aos-duration="2000"
+          >
+            Ubicaciones
+          </p>
           <div class="d-flex justify-content-center align-items-center">
-            <img class="line" src="./assets/img/lineaalreves.png" alt="" />
+            <img class="line" src="./assets/img/lineaalreves.png" alt="linea" />
           </div>
         </div>
         <div class="d-flex row m-0 justify-content-center align-items-center">
-          <div class="col-md-5 container-ubicaciones">
+          <div
+            class="col-md-5 container-ubicaciones"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
             <div class="card-ubicaciones">
               <p class="text-center font-paris display-4">Ceremonia</p>
               <p class="text-center display-6">19:00hrs</p>
               <div class="d-flex justify-content-center align-items-center">
                 <img
+                  loading="lazy"
                   class="img-ubicaciones"
                   src="./assets/img/iglesia.jpeg"
-                  alt=""
+                  alt="iglesia"
                 />
               </div>
               <p class="text-center display-6 py-3">
@@ -470,16 +531,8 @@
                 class="d-flex align-items-center py-4 justify-content-center"
               >
                 <a href=""
-                  ><button
-                    class="btn btn-light display-6 py-3 d-flex align-items-center"
-                  >
-                    <video
-                      loading="lazy"
-                      loop
-                      autoplay
-                      class="icon-mp4"
-                      src="./assets/video/location (1).mp4"
-                    ></video>
+                  ><button class="btn display-6 py-3 d-flex align-items-center">
+                    <i class="bi bi-geo-alt"></i>
                     <span
                       class="d-flex align-items-center justify-content-center p-0 m-0"
                     >
@@ -490,16 +543,18 @@
               </div>
             </div>
           </div>
-          <div class="col-md-5 container-ubicaciones">
+          <div
+            class="col-md-5 container-ubicaciones"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="700"
+          >
             <div class="card-ubicaciones">
               <p class="text-center font-paris display-4">Recepción</p>
               <p class="text-center display-6">20:00hrs</p>
               <div class="d-flex justify-content-center align-items-center">
-                <img
-                  class="img-ubicaciones"
-                  src="./assets/img/salon-cristina.png"
-                  alt=""
-                />
+                < class="img-ubicaciones" src="./assets/img/salon-cristina.png"
+                alt="salon" />
               </div>
               <p class="text-center display-6 py-3">
                 Salón de Eventos "Cristina"
@@ -511,16 +566,8 @@
                 class="d-flex align-items-center py-3 justify-content-center"
               >
                 <a href=""
-                  ><button
-                    class="btn btn-light display-6 py-3 d-flex align-items-center"
-                  >
-                    <video
-                      loading="lazy"
-                      loop
-                      autoplay
-                      class="icon-mp4"
-                      src="./assets/video/location (1).mp4"
-                    ></video>
+                  ><button class="btn display-6 py-3 d-flex align-items-center">
+                    <i class="bi bi-geo-alt"></i>
                     <span
                       class="d-flex align-items-center justify-content-center p-0 m-0"
                     >
@@ -534,7 +581,11 @@
         </div>
       </section>
       <section class="window-back">
-        <div class="window d-flex justify-content-center align-items-center">
+        <div
+          class="window d-flex justify-content-center align-items-center"
+          data-aos="flip-up"
+          data-aos-duration="3000"
+        >
           <p
             class="p-4 rounded bg-white text-center w-90 display-5 font-paris font-weight-light"
           >
@@ -545,11 +596,13 @@
       <section class="nuestro-inicio p-4">
         <p class="text-center text-white pt-4 display-6">Así empezamos</p>
         <div class="d-flex justify-content-center align-items-center">
-          <img
-            class=""
-            src="./assets/img/pexels-barbara-ribeiro-8506039.jpg"
-            alt=""
-          />
+          <div class="w-100 d-flex justify-content-center">
+            <img
+              loading="lazy"
+              src="./assets/img/pexels-barbara-ribeiro-8506039.jpg"
+              alt="foto"
+            />
+          </div>
         </div>
         <div class="d-flex pt-4 justify-content-center align-items-center">
           <p class="text text-white text-center display-6">
@@ -557,9 +610,14 @@
           </p>
         </div>
       </section>
-      <section class="p-4">
+      <section class="p-4" data-aos="zoom-in" data-aos-duration="2000">
         <div class="py-4 d-flex justify-content-center align-items-center">
-          <img class="line" src="./assets/img/lineaalreves.png" alt="" />
+          <img
+            loading="lazy"
+            class="line"
+            src="./assets/img/lineaalreves.png"
+            alt="linea"
+          />
         </div>
         <div class="py-4 d-flex justify-content-center">
           <p class="text2 text-center display-5">
@@ -568,14 +626,23 @@
           </p>
         </div>
         <div class="pb-4 d-flex justify-content-center align-items-center">
-          <img class="line" src="./assets/img/Untitled design (3).png" alt="" />
+          <img
+            loading="lazy"
+            class="line"
+            src="./assets/img/Untitled design (3).png"
+            alt="linea"
+          />
         </div>
       </section>
       <section
         class="window-regalos d-flex justify-content-center align-items-center"
       >
         <div class="w-80 h-80 d-flex justify-content-center">
-          <div class="card-regalos p-4">
+          <div
+            class="card-regalos p-4"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <p class="display-4 text-center pt-4 font-paris">Mesa de Regalos</p>
             <div class="d-flex justify-content-center">
               <hr class="text-center" />
@@ -586,9 +653,10 @@
                   class="d-flex pt-4 justify-content-center align-items-center"
                 >
                   <img
+                    loading="lazy"
                     class="logo-liverpool"
                     src="./assets/img/LIVERPOOL-logo.png"
-                    alt=""
+                    alt="logo"
                   />
                 </div>
                 <div class="d-flex justify-content-center">
@@ -618,16 +686,20 @@
       </section>
       <section class="d-flex justify-content-center align-items-center">
         <div class="w-80 py-4 text-center">
-          <p class="display-6">¡Gracias por tus muestras de cariño!</p>
-          <p class="display-6">
-            Si así lo prefieres, también puedes hacer transferencia
+          <p class="display-6" data-aos="flip-up" data-aos-duration="2000">
+            ¡Gracias por tus muestras de cariño!
           </p>
-          <div class="d-flex justify-content-center">
-            <hr />
+          <div>
+            <p class="display-6" data-aos="flip-up" data-aos-duration="2000">
+              Si así lo prefieres, también puedes hacer transferencia
+            </p>
+            <div class="d-flex justify-content-center">
+              <hr />
+            </div>
+            <p class="display-number">4027665305767718</p>
+            <p>Arturo Jiménez Díaz</p>
+            <p>BBVA</p>
           </div>
-          <p class="display-6">4027665305767718</p>
-          <p>Arturo Jiménez Díaz</p>
-          <p>BBVA</p>
         </div>
       </section>
       <section class="pase bg-gold p-4">
@@ -641,9 +713,11 @@
         </p>
       </section>
       <section class="text-center p-4">
-        <p class="display-4">¡Confirma tu asistencia!</p>
+        <p class="display-4" data-aos="zoom-in" data-aos-duration="2000">
+          ¡Confirma tu asistencia!
+        </p>
         <div class="d-flex justify-content-center align-items-center">
-          <p class="w-50 py-4">
+          <p class="w-50 py-4" data-aos="fade-in" data-aos-duration="3000">
             <i class="bi bi-ticket font-icon"></i>Por favor, danos la respuesta
             de tu asistencia al evento antes del 15 de Noviembre
           </p>
@@ -666,8 +740,10 @@
       <section
         class="last-window-back d-flex justify-content-center align-items-center"
       >
-        <div class="font-paris display-3 text-white p-4">
-          <p class="text-center">¡Te esperamos!</p>
+        <div class="font-paris display-2 text-white p-4">
+          <p class="text-center" data-aos="fade-down" data-aos-duration="2000">
+            ¡Te esperamos!
+          </p>
         </div>
       </section>
       <section class="last-container">
@@ -693,9 +769,6 @@
       $(".owl-carousel").owlCarousel({
         loop: true,
         autoplay: true,
-        // animateIn: "fadeIn",
-        // animateOut: "fadeOut",
-        // margin: 10,
         nav: true,
         slideBy: 1,
         responsive: {
@@ -713,6 +786,10 @@
     </script>
     <!-- js -->
     <script src="./javascript.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- boostrp -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
