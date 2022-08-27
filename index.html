@@ -47,15 +47,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- AOS animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
     <title>Arturo y Noemi</title>
   </head>
   <body>
-    <div
-      id="bg"
-      class="bg-white-almond d-flex justify-content-center align-items-center"
-    >
+    <!-- Sobre -->
+    <!-- Div Padre que tiene el background negro que se ve cuando se "abre" el sobre -->
+    <div class="bg-dark-black d-flex justify-content-center align-items-center">
+      <!-- Div que contiene la parte del sobre de arriba, de abajo y el logo A&N que es un boton
+    que ejecuta la función abrir(linea 4 js). Cuando se ejecuta, se les agregan animaciones
+  a estos tres elemenots para simular que es un sobre que se abre. Después de 2.5 con el setTimeOut
+se le agrega la clase hide(linea 74 styles) que tiene el display none para que se eliminen estos elementos
+incluyendo el background negro (que es el Div Padre) -->
       <div id="hoja-principal" class="sobre">
         <img
           loading="lazy"
@@ -81,6 +85,11 @@
         </button>
       </div>
     </div>
+    <!-- Invitacion -->
+    <!-- En la invitacion, todas las animaciones que usé
+    son de la libreria de AOS link index:50 pero no funcionan
+  por las clases hide de la funcion abrir javascript:4-->
+    <!-- La primer animacion está en la linea 121 de este archivo index -->
     <div id="invitacion" class="hide invitacion">
       <section class="home d-flex justify-content-center align-items-center">
         <div class="d-flex justify-content-center">
@@ -109,6 +118,7 @@
       <section class="second-section">
         <div class="container d-flex justify-content-center align-items-center">
           <div class="col-10">
+            <!-- Primera animacion AOS -->
             <div data-aos="fade-down" data-aos-duration="2000">
               <div
                 class="pb-4 d-flex justify-content-center align-items-center"
@@ -553,8 +563,11 @@
               <p class="text-center font-paris display-4">Recepción</p>
               <p class="text-center display-6">20:00hrs</p>
               <div class="d-flex justify-content-center align-items-center">
-                < class="img-ubicaciones" src="./assets/img/salon-cristina.png"
-                alt="salon" />
+                <img
+                  class="img-ubicaciones"
+                  src="./assets/img/salon-cristina.png"
+                  alt="salon"
+                />
               </div>
               <p class="text-center display-6 py-3">
                 Salón de Eventos "Cristina"

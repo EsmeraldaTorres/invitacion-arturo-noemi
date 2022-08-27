@@ -2,18 +2,26 @@ const audio = document.getElementById("audio");
 const playPause = document.getElementById("play");
 
 function abrir() {
+  // animaciones que se hicieron con animate.css (link en html 45, también lo instalé con npm animate....)
+  // La imagen del sobre de arriba(index 67), se levanta y desaparece
   document.getElementById("sobre-arriba").classList.add("animate__fadeOutUp");
+  // La imagen del sobre de abajo(index 74) se desliza hacia abajo y desaparece
   document.getElementById("sobre-abajo").classList.add("animate__slideOutDown");
+  // codigo que pausa la repeticiín infinita de la animacion pulso del boton A&N
   document.getElementById("btn-open").classList.remove("animate__infinite");
-  document.getElementById("btn-open").classList.add("hide");
 
+  // función para que las cosas no pasen rápido :D
   setTimeout(function () {
+    //codigo que elimina el boton A&N
+    document.getElementById("btn-open").classList.add("hide");
+    // Clase hide es display none para el div que contiene los 3 elementos del sobre
+    // (index 63)
+    // y también hace que ya no se vea el div Padre de background negro (index 57)
     document.getElementById("hoja-principal").classList.add("hide");
-    document.getElementById("bg").classList.add("hide");
+    // remueve el display none de la invitacion para que sea visible (index 88)
     document.getElementById("invitacion").classList.remove("hide");
-    document
-      .getElementById("name")
-      .classList.add("animate__animated animate__pulse");
+    // El audio se reproduce pero como estoy en pruebas, no he subido bien el nombre
+    // del archivo para que no se reproduzca mucho
     audio.play();
   }, 2500);
 }
