@@ -139,6 +139,7 @@
   cursor: pointer;
   border-radius: 50%;
   justify-content: center;
+  z-index: 9;
 }
 .player-btn:hover {
   cursor: pointer;
