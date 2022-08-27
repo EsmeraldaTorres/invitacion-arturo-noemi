@@ -51,10 +51,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Arturo y Noemi</title>
   </head>
-  <body>
+  <body class="avoiding-scroll">
     <!-- Sobre -->
     <!-- Div Padre que tiene el background negro que se ve cuando se "abre" el sobre -->
-    <div class="bg-dark-black d-flex justify-content-center align-items-center">
+    <div
+      class="bg-dark-black d-flex justify-content-center align-items-center test-class"
+      id="parent-div"
+    >
       <!-- Div que contiene la parte del sobre de arriba, de abajo y el logo A&N que es un boton
     que ejecuta la función abrir(linea 4 js). Cuando se ejecuta, se les agregan animaciones
   a estos tres elemenots para simular que es un sobre que se abre. Después de 2.5 con el setTimeOut
@@ -77,6 +80,7 @@ incluyendo el background negro (que es el Div Padre) -->
         />
         <button id="btn-open" class="btn-open" onclick="abrir()">
           <img
+            id="logo"
             loading="lazy"
             src="./assets/img/logo.png"
             class="animate__animated animate__pulse animate__infinite"
@@ -90,7 +94,7 @@ incluyendo el background negro (que es el Div Padre) -->
     son de la libreria de AOS link index:50 pero no funcionan
   por las clases hide de la funcion abrir javascript:4-->
     <!-- La primer animacion está en la linea 121 de este archivo index -->
-    <div id="invitacion" class="hide invitacion">
+    <div id="invitacion" class="invitacion hide">
       <section class="home d-flex justify-content-center align-items-center">
         <div class="d-flex justify-content-center">
           <img
@@ -111,7 +115,7 @@ incluyendo el background negro (que es el Div Padre) -->
             id="audio"
             controls
             autoplay
-            src="./assets/audio/musica-lewis-coffee-at-midnight.mp"
+            src="./assets/audio/musica-lewis-coffee-at-midnight.mp3"
           ></audio>
         </div>
       </section>
@@ -373,6 +377,7 @@ incluyendo el background negro (que es el Div Padre) -->
             ></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">

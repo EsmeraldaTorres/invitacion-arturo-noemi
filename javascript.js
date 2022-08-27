@@ -8,12 +8,16 @@ function abrir() {
   // La imagen del sobre de abajo(index 74) se desliza hacia abajo y desaparece
   document.getElementById("sobre-abajo").classList.add("animate__slideOutDown");
   // codigo que pausa la repeticiín infinita de la animacion pulso del boton A&N
-  document.getElementById("btn-open").classList.remove("animate__infinite");
+  document.getElementById("logo").classList.remove("animate__infinite");
 
+  document.getElementById("parent-div").classList.remove("test-class");
+  document.getElementsByTagName("body")[0].classList.remove("avoiding-scroll");
+
+  window.scrollTo(0, 0);
   // función para que las cosas no pasen rápido :D
   setTimeout(function () {
     //codigo que elimina el boton A&N
-    document.getElementById("btn-open").classList.add("hide");
+    document.getElementById("logo").classList.add("hide");
     // Clase hide es display none para el div que contiene los 3 elementos del sobre
     // (index 63)
     // y también hace que ya no se vea el div Padre de background negro (index 57)

@@ -3,6 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.avoiding-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
 .font-paris {
   font-family: "Parisienne", cursive;
 }
@@ -14,6 +20,15 @@
 .title2 {
   font-size: 2.5rem;
 }
+
+.test-class {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
 /* data-aos-duration="3000" */
 /* sobre */
 .sobre {
@@ -72,7 +87,8 @@
   padding-bottom: 4rem;
 }
 .hide {
-  display: none;
+  visibility: hidden;
+  max-height: 0vw;
 }
 
 .visibility {
@@ -252,7 +268,7 @@ h3 {
 .display-number {
   font-size: 1.2rem;
 }
-/* ubicación */
+/* ubicaciÃ³n */
 .ubicacion {
   height: min-content;
 }
