@@ -3,7 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.max-w-90 {
+  max-width: 100vw;
+}
 .avoiding-scroll {
   height: 100%;
   overflow: hidden;
