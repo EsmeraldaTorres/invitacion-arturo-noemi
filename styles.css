@@ -75,13 +75,23 @@
   vertical-align: middle;
   border-style: none;
 }
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  box-shadow: none !important;
+  transition: none !important;
+}
 
 .btn-open {
+  box-shadow: none !important;
+  transition: none !important;
   position: absolute;
   z-index: 4;
   background-color: rgba(240, 255, 255, 0);
   border: none;
   text-decoration: none;
+}
+.btn-open:focus {
+  outline: none;
 }
 .btn-open img {
   height: 40%;
@@ -161,6 +171,11 @@
   min-width: 100%;
 }
 .second-section .container2 {
+  background-image: linear-gradient(
+      rgba(5, 7, 12, 0.493),
+      rgba(5, 7, 12, 0.335)
+    ),
+    url("./assets/img/pexels-jasmine-carter-888899.jpg");
   height: 60vh;
   width: auto;
   background-color: rgba(0, 0, 0, 0.575);
