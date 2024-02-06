@@ -389,7 +389,7 @@ button:hover {
   max-width: 100%;
   background-image: url("./assets/img/pexels-milan-4639620.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-repeat: no-repeat;
   background-position: center;
 }
