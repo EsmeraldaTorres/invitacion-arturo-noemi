@@ -198,6 +198,9 @@
 .decoration {
   width: 200px;
 }
+.linksfiltro {
+  text-decoration: underline;
+}
 .filtro-text {
   font-size: 1.5rem !important;
 }
