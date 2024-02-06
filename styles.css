@@ -251,7 +251,8 @@ hr {
 }
 /* itinerario */
 .itinerario {
-  height: 60vh;
+  /* height: 60vh; */
+  height: max-content;
   background-image: linear-gradient(
       rgba(5, 7, 12, 0.277),
       rgba(5, 7, 12, 0.277)
@@ -347,7 +348,7 @@ button:hover {
   -webkit-background-size: cover; /* Para Safari y Chrome (versiones antiguas) */
   -moz-background-size: cover; /* Para Firefox (versiones antiguas) */
   -o-background-size: cover; /* Para Opera (versiones antiguas) */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-repeat: no-repeat;
   background-position: center;
 }
