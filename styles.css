@@ -344,6 +344,9 @@ button:hover {
   max-width: 100%;
   background-image: url("./assets/img/pexels-jasmine-carter-888899.jpg");
   background-size: cover;
+  -webkit-background-size: cover; /* Para Safari y Chrome (versiones antiguas) */
+  -moz-background-size: cover; /* Para Firefox (versiones antiguas) */
+  -o-background-size: cover; /* Para Opera (versiones antiguas) */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
