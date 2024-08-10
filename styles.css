@@ -87,6 +87,12 @@
   transition: none !important;
 }
 
+.owl-carousel .owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 50;
+}
+
 .btn-open {
   box-shadow: none !important;
   transition: none !important;
@@ -394,7 +400,38 @@ button:hover {
   width: 80%;
 }
 .text2 {
-  width: 50%;
+  width: 90%;
+}
+.bg-vestimenta {
+  height: min-content !important;
+  background: white;
+  background-size: cover;
+  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
+  -moz-background-size: cover; /* Para Firefox */
+  -o-background-size: cover; /* Para Opera */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-dinamic-galery {
+  background-color: white;
+  padding: 3rem 2rem !important;
+  display: flex;
+  justify-content: center;
+}
+.dinamic-galery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  margin: 0;
+  padding: 2rem 2rem;
+  background-image: linear-gradient(rgb(5 7 12 / 36%), rgb(5 7 12 / 25%)),
+    url("./assets/img/Copia\ de\ Room.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .window-regalos {
   height: min-content;
@@ -491,6 +528,13 @@ a:hover {
   .title-principal {
     font-size: 5.5rem;
   }
+  .dress-code-img {
+    width: 30%;
+  }
+  .principal-text {
+    width: 60%;
+    text-align: center;
+  }
   .btn-open img {
     height: 55%;
     width: 55%;
@@ -534,6 +578,10 @@ a:hover {
     width: 70%;
     padding-right: 0 !important;
   }
+  .btn-open img {
+    height: 25%;
+    width: 25%;
+  }
   .z-index-3 {
     position: absolute;
     bottom: 30;
@@ -558,10 +606,10 @@ a:hover {
     vertical-align: middle;
     border-style: none;
   }
-  .btn-open img {
+  /* .btn-open img {
     height: 70%;
     width: 70%;
-  }
+  } */
   .card {
     height: 45vh;
   }
