@@ -123,6 +123,29 @@
 .invitacion {
   width: 100vw;
 }
+.main-image{
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgb(5 7 12 / 59%), rgb(5 7 12 / 67%)), url("./assets/img/paquete-premium.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn-language{
+  border: none;
+  padding: .5rem .8rem;
+  border-radius: 10px;
+  margin-right: .5rem ;
+  margin-left: .5rem ;
+  font-size: 1.2rem;
+
+}
 .home {
   height: 100vh;
   width: 100%;
@@ -221,7 +244,7 @@
 .cuenta-regresiva {
   text-align: center;
   font-size: 1.1rem;
-  color: rgba(240, 248, 255, 0.849);
+  color: rgba(240, 248, 255, 0.849) !important;
 }
 .cuenta {
   display: flex;

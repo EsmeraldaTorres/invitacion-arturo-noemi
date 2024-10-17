@@ -54,13 +54,13 @@ var x = setInterval(function () {
   document.getElementById("demo").innerHTML = `
   <div class="d-flex justify-content-center">
     <div class="cuenta p-4" >
-  <span>${days} días</span>
-  <span class="ml-2 mr-2"> : </span>  
-  <span>${hours} hrs</span> 
-  <span class="ml-2 mr-2"> : </span>   
-  <span>${minutes} min</span>
-  <span class="ml-2 mr-2"> : </span>  
-  <span>${seconds} seg</span> 
+  <span class="text-white">${days} días</span>
+  <span class="ml-2 mr-2 text-white"> : </span>  
+  <span class="text-white">${hours} hrs</span> 
+  <span class="ml-2 mr-2 text-white"> : </span>   
+  <span class="text-white">${minutes} min</span>
+  <span class="ml-2 mr-2 text-white"> : </span>  
+  <span class="text-white">${seconds} seg</span> 
     </div>
   </div>
     `;
