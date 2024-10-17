@@ -138,6 +138,7 @@
   align-items: center;
 }
 .btn-language{
+  cursor: pointer;
   border: none;
   padding: .5rem .8rem;
   border-radius: 10px;
